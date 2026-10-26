@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "web-dev",
+  "compatibility_date": "2026-10-19",
+  "assets": {
+    "directory": "dist"
+  },
+  "routes": [
+    {
+      "pattern": "zarbitz.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.zarbitz.com",
+      "custom_domain": true
+    }
+  ]
+}

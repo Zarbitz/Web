@@ -1,0 +1,32 @@
+# OS & Editor files
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+.venv/
+env/
+venv/
+
+# Large Data & SAR Stores (Master Zarr, GeoTIFFs, Binary arrays)
+data/
+**/data/
+*.zarr/
+*.zarr
+*.tif
+*.tiff
+*.bin
+
+# Temporary & Scratch
+references/
+scratch/

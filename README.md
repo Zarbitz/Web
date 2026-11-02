@@ -16,3 +16,25 @@ Photography is representative, not evidence of ZARBITZ customer work. Images sou
 
 ## Verification
 JavaScript syntax checked. Browser-reviewed desktop and 390px mobile homepage, account entry, workspace navigation, and report-access revocation. Hosting remains owner-private. This is a design preview, not a production authentication system.
+
+---
+
+# Dam Stability Observatory (InSAR & Zarr Web Dashboard)
+
+Interactive satellite InSAR dam deformation monitoring dashboard covering **390 major Indian dams** (CWC registered) and Sentinel-1 SBAS displacement time-series.
+
+### Quick Start (Run Locally)
+1. Double-click `start.command` (macOS / Linux) or `start.bat` (Windows).
+2. Or run via terminal:
+   ```bash
+   python3 dashboard/server.py
+   ```
+3. Open `http://localhost:8767` in any browser.
+
+### Structure
+- `dashboard/`: Standalone web dashboard application and local server (`server.py`).
+- `dist/dams/`: Production static build deployed alongside the website.
+- `source/`: React & ESBuild frontend source code (`src/main.jsx`, `src/DamMap.jsx`, `build.mjs`).
+- `scripts/`: Python pipelines for building Master Zarr v3 stores and calculating displacement matrices (`build_master_zarr.py`).
+- `start.command` / `start.bat`: One-click local launch scripts.
+
